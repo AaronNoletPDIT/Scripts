@@ -3,8 +3,16 @@ OLDIFS=$IFS
 IFS=","
 
 HEADVALS=$( head -n 1 $1 )
-HEADMOD=$( sed -i 's/ /_/g' $HEADVALS)
+HEADMOD=$( echo ${HEADVALS// /_} )
+HEADMOD=$( echo ${HEADMOD//\//_per_} )
+HEADMOD=$( echo ${HEADMOD//[][]/} )
+HEADMOD=$( echo ${HEADMOD//%/_percent} )
 
-echo -e "Header Vals from $1:\n-------------------\n$HEADVALS\n\n\n$HEADMOD"
+echo -e "Header Vals from $1:\n-------------------\n$HEADVALS\n\nModed Header Vals:\n$HEADMOD"
 
-< $1
+while read $HEADMOD
+do
+echo -e "IDXnum: $i = $HEADMOD\n"
+done < $1
+
+IFS=$OLDIFS
