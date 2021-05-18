@@ -8,5 +8,5 @@ if (( $EUID != 0 )); then
     exit
 fi
 wget http://download.bitdefender.com/updates/bitdefender_v9/cumulative.zip
-unzip cumulative.zip -o -d /images/dev/rescue/lib/scan/Plugins
-chown root:root /images/dev/rescue/lib/scan/Plugins -R
+unzip -o cumulative.zip -d /images/dev/rescue/lib/scan/Plugins/
+chown root:root /images/dev/rescue/lib/scan/Plugins/ -R
