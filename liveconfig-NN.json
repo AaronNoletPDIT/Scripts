@@ -1,5 +1,5 @@
 {
-    "max_open_trades": 7,
+    "max_open_trades": 6,
     "stake_currency": "USDT",
     "stake_amount": 15,
     "tradable_balance_ratio": 1,
