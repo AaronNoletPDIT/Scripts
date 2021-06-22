@@ -77,6 +77,12 @@
     {"method": "PrecisionFilter"},
     {"method": "PriceFilter", "low_price_ratio": 0.01},
     {"method": "SpreadFilter", "max_spread_ratio": 0.005},
+    {
+        "method": "RangeStabilityFilter",
+        "lookback_days": 7,
+        "min_rate_of_change": 0.04,
+        "refresh_period": 600
+    },
     {"method": "ShuffleFilter", "seed": 82}
     ],
     "edge": {
