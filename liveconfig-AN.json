@@ -44,6 +44,8 @@
     ],
     "pair_blacklist": [
         "AUD/USDT",
+        "ADAUP/USDT",
+        "ADADOWN/USDT",
         "BNB/USDT",
         "BNBUP/USDT",
         "BNBDOWN/USDT",
@@ -64,7 +66,9 @@
         "AVAX/USDT",
         "GTO/USDT",
         "SC/USDT",
-        "UNFI/USDT"
+        "UNFI/USDT",
+        "XRPUP/USDT",
+        "XRPDOWN/USDT"
     ]
     },
 "pairlists": [
