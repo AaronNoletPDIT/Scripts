@@ -69,7 +69,7 @@
 "pairlists": [
     {
         "method": "VolumePairList",
-        "number_assets": 60,
+        "number_assets": 20,
         "sort_key": "quoteVolume",
     },
     {"method": "AgeFilter", "min_days_listed": 2},
