@@ -22,8 +22,8 @@ class Quickie(IStrategy):
     # This attribute will be overridden if the config file contains "minimal_roi"
     minimal_roi = {
         "360": 0.01,
-        "70": 0.02,
-        "60": 0.03,
+        "180": 0.02,
+        "90": 0.03,
         "45": 0.05,
         "30": 0.10,
         "15": 0.15,
